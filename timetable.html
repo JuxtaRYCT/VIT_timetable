@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Timetable
+    </title>
+    <style>
+        p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 2px solid rgb(0, 183, 255);
+            border-collapse: collapse;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .theory-heading-row {
+            background-color: rgb(187, 142, 230);
+        }
+
+        .lab-heading-row {
+            background-color: rgb(135, 201, 255);
+        }
+
+        .theory-row {
+            background-color: rgb(255, 235, 212);
+        }
+
+        .lab-row {
+            background-color: rgba(255, 206, 145, 0.908);
+        }
+
+        .header-column {
+            background-color: rgb(209, 209, 209);
+        }
+
+        .course {
+            background-color: rgb(198, 255, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Timetable for Winter Semester 2023-2024
+    </p>
+    <div>
+        <table>
+            <tr class="theory-heading-row">
+                <th class="header-column" rowspan="2">THEORY</th>
+                <th class="header-column">Start</th>
+                <th>8:00</th>
+                <th>9:00</th>
+                <th>10:00</th>
+                <th>11:00</th>
+                <th>12:00</th>
+                <th>-</th>
+                <th>Lunch</th>
+                <th>14:00</th>
+                <th>15:00</th>
+                <th>16:00</th>
+                <th>17:00</th>
+                <th>18:00</th>
+                <th>18:51</th>
+                <th>19:01</th>
+            </tr>
+            <tr class="theory-heading-row">
+                <th class="header-column">End</th>
+                <th>8:50</th>
+                <th>9:50</th>
+                <th>10:50</th>
+                <th>11:50</th>
+                <th>12:50</th>
+                <th>-</th>
+                <th>Lunch</th>
+                <th>14:50</th>
+                <th>15:50</th>
+                <th>16:50</th>
+                <th>17:50</th>
+                <th>18:50</th>
+                <th>19:00</th>
+                <th>19:50</th>
+            </tr>
+            <tr class="lab-heading-row">
+                <th class="header-column" rowspan="2">LAB</th>
+                <th class="header-column">Start</th>
+                <th>8:00</th>
+                <th>8:51</th>
+                <th>9:51</th>
+                <th>10:41</th>
+                <th>11:40</th>
+                <th>12:31</th>
+                <th>Lunch</th>
+                <th>14:00</th>
+                <th>14:51</th>
+                <th>15:51</th>
+                <th>16:41</th>
+                <th>17:40</th>
+                <th>18:31</th>
+                <th>-</th>
+            </tr>
+            <tr class="lab-heading-row">
+                <th class="header-column">End</th>
+                <th>8:50</th>
+                <th>9:40</th>
+                <th>10:40</th>
+                <th>11:30</th>
+                <th>12:30</th>
+                <th>13:20</th>
+                <th>Lunch</th>
+                <th>14:50</th>
+                <th>15:40</th>
+                <th>16:40</th>
+                <th>17:30</th>
+                <th>18:30</th>
+                <th>19:20</th>
+                <th>-</th>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">MON</td>
+                <td class="header-column">THEORY</td>
+                <td>A1</td>
+                <td>F1</td>
+                <td>D1</td>
+                <td>TB1</td>
+                <td>TD1</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td class="course">A2-BCSE204L-PRP209</td>
+                <td>F2</td>
+                <td class="course">D2-BCSE205L-PRP411</td>
+                <td class="course">TB2-BCSE304L-PRP318</td>
+                <td class="course">TG2-BMAT202L-PRP313</td>
+                <td>-</td>
+                <td>V3</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td>L1</td>
+                <td>L2</td>
+                <td>L3</td>
+                <td>L4</td>
+                <td>L5</td>
+                <td>L6</td>
+                <td class="header-column">Lunch</td>
+                <td>L31</td>
+                <td>L32</td>
+                <td>L33</td>
+                <td>L34</td>
+                <td>L35</td>
+                <td>L36</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">TUE</td>
+                <td class="header-column">THEORY</td>
+                <td>B1</td>
+                <td>G1</td>
+                <td>E1</td>
+                <td>TC1</td>
+                <td>TAA1</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td class="course">B2-BCSE304L-PRP318</td>
+                <td class="course">G2-BMAT202L-PRP313</td>
+                <td class="course">E2-BSTS102P-PRP319</td>
+                <td class="course">TC2-BECE204L-PRP219</td>
+                <td class="course">TAA2-BCSE203E-PRP308</td>
+                <td>-</td>
+                <td>V4</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td>L7</td>
+                <td>L8</td>
+                <td class="course">L9-BCSE204P-SJT219</td>
+                <td class="course">L10-BCSE204P-SJT219</td>
+                <td>L11</td>
+                <td>L12</td>
+                <td class="header-column">Lunch</td>
+                <td>L37</td>
+                <td>L38</td>
+                <td>L39</td>
+                <td>L40</td>
+                <td>L41</td>
+                <td>L42</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">WED</td>
+                <td class="header-column">THEORY</td>
+                <td>C1</td>
+                <td>A1</td>
+                <td>F1</td>
+                <td>V1</td>
+                <td>V2</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td class="course">C2-BECE204L-PRP219</td>
+                <td class="course">A2-BCSE204L-PRP209</td>
+                <td>F2</td>
+                <td class="course">TD2-BCSE205L-PRP411</td>
+                <td>TBB2</td>
+                <td>-</td>
+                <td>V5</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td class="course">L13-BCSE203E-SJT120</td>
+                <td class="course">L14-BCSE203E-SJT120</td>
+                <td class="course">L15-BECE204P-SJT515</td>
+                <td class="course">L16-BECE204P-SJT515</td>
+                <td>L17</td>
+                <td>L18</td>
+                <td class="header-column">Lunch</td>
+                <td>L43</td>
+                <td>L44</td>
+                <td>L45</td>
+                <td>L46</td>
+                <td>L47</td>
+                <td>L48</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">THU</td>
+                <td class="header-column">THEORY</td>
+                <td>D1</td>
+                <td>B1</td>
+                <td>G1</td>
+                <td>TE1</td>
+                <td>TCC1</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td class="course">D2-BCSE205L-PRP411</td>
+                <td class="course">B2-BCSE304L-PRP318</td>
+                <td class="course">G2-BMAT202L-PRP313</td>
+                <td class="course">TE2-BSTS102P-PRP319</td>
+                <td>TCC2</td>
+                <td>-</td>
+                <td>V6</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td class="course">L19-BCSE203E-SJT120</td>
+                <td class="course">L20-BCSE203E-SJT120</td>
+                <td>L21</td>
+                <td>L22</td>
+                <td>L23</td>
+                <td>L24</td>
+                <td class="header-column">Lunch</td>
+                <td>L49</td>
+                <td>L50</td>
+                <td>L51</td>
+                <td>L52</td>
+                <td>L53</td>
+                <td>L54</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">FRI</td>
+                <td class="header-column">THEORY</td>
+                <td>E1</td>
+                <td>C1</td>
+                <td>TA1</td>
+                <td>TF1</td>
+                <td>TD1</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td class="course">E2-BSTS102P-PRP319</td>
+                <td class="course">C2-BECE204L-PRP219</td>
+                <td class="course">TA2-BCSE204L-PRP209</td>
+                <td>TF2</td>
+                <td>TDD2</td>
+                <td>-</td>
+                <td>V7</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td>L25</td>
+                <td>L26</td>
+                <td>L27</td>
+                <td>L28</td>
+                <td class="course">L29-BMAT202P-PRP119</td>
+                <td class="course">L30-BMAT202P-PRP119</td>
+                <td class="header-column">Lunch</td>
+                <td>L55</td>
+                <td>L56</td>
+                <td>L57</td>
+                <td>L58</td>
+                <td>L59</td>
+                <td>L60</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">SAT</td>
+                <td class="header-column">THEORY</td>
+                <td>V8</td>
+                <td>X11</td>
+                <td>X12</td>
+                <td>V11</td>
+                <td>Y12</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td>X21</td>
+                <td>Z21</td>
+                <td>Y21</td>
+                <td>W21</td>
+                <td>W22</td>
+                <td>-</td>
+                <td>V9</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td>L71</td>
+                <td>L72</td>
+                <td>L73</td>
+                <td>L74</td>
+                <td>L75</td>
+                <td>L76</td>
+                <td class="header-column">Lunch</td>
+                <td>L77</td>
+                <td>L78</td>
+                <td>L79</td>
+                <td>L80</td>
+                <td>L81</td>
+                <td>L82</td>
+                <td>-</td>
+            </tr>
+            <tr class="theory-row">
+                <td class="header-column" rowspan="2">SUN</td>
+                <td class="header-column">THEORY</td>
+                <td>V10</td>
+                <td>Y11</td>
+                <td>Y12</td>
+                <td>X11</td>
+                <td>X12</td>
+                <td>-</td>
+                <td class="header-column">Lunch</td>
+                <td>Y21</td>
+                <td>Z21</td>
+                <td>X21</td>
+                <td>W21</td>
+                <td>W22</td>
+                <td>-</td>
+                <td>V11</td>
+            </tr>
+            <tr class="lab-row">
+                <td class="header-column">LAB</td>
+                <td>L83</td>
+                <td>L84</td>
+                <td>L85</td>
+                <td>L86</td>
+                <td>L87</td>
+                <td>L88</td>
+                <td class="header-column">Lunch</td>
+                <td>L89</td>
+                <td>L90</td>
+                <td>L91</td>
+                <td>L92</td>
+                <td>L93</td>
+                <td>L94</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
